@@ -1,0 +1,133 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(berserk-knight-guts-5120x2880-18713.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 320px;
+    padding: 24px;
+    background: rgb(0,0,0,0.1);
+    border-radius: 15px;
+    border: 5px solid rgb(0,0,0,0.1) ;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px 20px rgb(0,0,0,0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.log-title{
+
+}
+.input-box{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+.input-box input{
+    width:500px;
+    padding: 8px;
+    border: 2px solid transparent ;
+    border-radius: 15px;
+    background: rgb(255,255,255,0.1) ;
+    outline: none;
+    color: white;
+    caret-color: white;
+    transition: 0.25s;
+}
+.input-box input:focus{
+    border:  solid rgb(255,255,255,0.1);
+
+
+}
+.input-box input::placeholder{
+    color: white ;
+}
+.input-box input::-ms-reveal{
+    filter: invert(100%) ;
+}
+.input-box i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -14px;
+    color: rgb(255,255,255,0.75);
+    font-size: 18px;
+    transition: 0.25s;
+}
+.input-box input:focus + i{
+    color: white;
+
+}
+.remember-forgot-box{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.remember-forgot-box h5{
+    font-weight: normal;
+    padding-left: 30px;
+    margin-top: -18px;
+    
+}
+.remember-me{
+    display: flex;
+    gap: 8px;
+    
+    
+    
+}
+.forgot-password{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 19px;
+
+}
+.forgot-password:hover{
+    text-decoration: underline;
+
+}
+.btn{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border-radius: 15px;
+    background-color: #32CDD5;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: ease-in-out 0.35s;
+    cursor: pointer;
+    border: none;
+}
+.btn:focus{
+    outline:none;
+}
+.btn:hover{
+    transform: scale(110%);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
